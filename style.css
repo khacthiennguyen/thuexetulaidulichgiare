@@ -1,0 +1,780 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+body {
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+
+
+
+header {
+  background-color: #333;
+  /* Màu nền */
+  color: #fff;
+  /* Màu chữ */
+  padding: 10px;
+  /* Khoảng cách từ nội dung đến biên của header */
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 100%; */
+}
+
+ul {
+  display: flex;
+  /* Sắp xếp các phần tử theo hàng ngang */
+  list-style: none;
+  /* Loại bỏ các dấu đầu dòng */
+  margin: 0;
+  /* Loại bỏ khoảng cách giữa các phần tử */
+  padding: 0;
+  /* Loại bỏ padding của phần tử ul */
+}
+
+li {
+  margin-right: 20px;
+  /* Khoảng cách giữa các phần tử li */
+
+}
+
+
+
+a {
+  color: #fff;
+  /* Màu chữ cho các liên kết */
+  text-decoration: none;
+  /* Loại bỏ đường gạch chân */
+  font-weight: bold;
+  /* Độ đậm của phông chữ */
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Thiết lập khoảng cách giữa các mục trong header */
+
+
+
+
+/* Hiệu ứng hover khi di chuột qua các mục trong header */
+nav ul li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.login {
+  display: flex;
+  /* Sắp xếp các phần tử theo hàng ngang */
+  align-items: center;
+  /* Canh giữa theo chiều dọc */
+}
+
+.login a {
+  margin-right: 20px;
+  /* Khoảng cách giữa các liên kết */
+}
+
+.login button {
+  background-color: #fff;
+  /* Màu nền của nút đăng ký */
+  color: #333;
+  /* Màu chữ của nút đăng ký */
+  border: none;
+  /* Loại bỏ đường viền */
+  padding: 8px 16px;
+  /* Kích thước của nút đăng ký */
+  font-weight: bold;
+  /* Độ đậm của phông chữ */
+}
+
+.login button {
+  background-color: #fff;
+  /* Màu nền của nút đăng ký */
+  color: #333;
+  /* Màu chữ của nút đăng ký */
+  border: none;
+  /* Loại bỏ đường viền */
+  padding: 8px 16px;
+  /* Kích thước của nút đăng ký */
+  font-weight: bold;
+  /* Độ đậm của phông chữ */
+}
+
+
+
+
+/* Thiết lập kích thước và khoảng cách giữa các phần tử trong hero */
+.hero {
+  background-image: url('https://www.zoomcar.com/img/hero-banner-web.png');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+/* Thiết lập font chữ, kích thước và khoảng cách giữa các phần tử trong hero */
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* Thiết lập khoảng cách giữa các input và nút tìm kiếm trong form */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Thiết lập font chữ vàmàu sắc cho các input và nút tìm kiếm trong form */
+form input[type="text"],
+form input[type="date"],
+form button {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Thiết lập màu sắc cho nút tìm kiếm */
+form button {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Hiệu ứng hover khi di chuột qua nút tìm kiếm */
+form button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Thiết lập các breakpoints để đảm bảo giao diện hiển thị tốt trên các thiết bị khác nhau */
+@media screen and (max-width: 768px) {
+
+  /* Thiết lập hiển thị các mục trong header dưới dạng menu */
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 0;
+  }
+}
+
+.web-banner-image {
+  position: relative;
+  width: 100%;
+  max-height: 650px;
+  overflow: hidden;
+}
+
+.web-banner-image-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.web-banner-image-block {
+  max-width: 70%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  height: -webkit-max-content;
+  height: max-content;
+  display: flex;
+}
+
+.web-banner-image-block-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.web-banner-image-block-sub-title {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.web-banner-image-block-background {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+/* Hiệu ứng hover khi di chuột qua phần tử */
+.web-banner-image-block:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* .web-banner-image-block-title,
+.web-banner-image-block-sub-title  */
+.web-banner-image-block-sub-title-link {
+  margin-top: 10px;
+  padding: 0 8px;
+  color: #fff;
+  max-height: max-content;
+  text-decoration-line: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.web-banner-image-block-sub-title-link:hover {
+  background-color: black;
+  box-decoration-break: slice;
+
+}
+
+/* Hiệu ứng hiển thị khi phần tử được hover */
+/* .web-banner-image-block:hover .web-banner-image-block-title,
+.web-banner-image-block:hover .web-banner-image-block-sub-title  */
+.web-banner-image-block:hover .web-banner-image-block-sub-title-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.carousel-section {
+  PADDING-TOP: 0PX;
+  PADDING-BOTTOM: 20PX;
+
+  background-color: #134f746b;
+  BORDER-RADIUS: 30PX;
+  MARGIN-TOP: 10PX;
+}
+
+.block-card.section {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.block-card.section h1 {
+  font-size: 32px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.block-card.section .subtile {
+  font-size: 24px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 20px;
+  margin-inline-start: 30px;
+  margin-block-end: 30px;
+}
+
+.carousel::-webkit-scrollbar {
+  /* display: none; */
+}
+
+.carousel .inner.vertical {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+}
+
+.carousel .inner.vertical .card {
+  flex: 0 0 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.carousel .inner.vertical .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.oval {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.oval.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.oval i {
+  color: #333333;
+  font-size: 20px;
+}
+
+.oval.left {
+  left: 20px;
+}
+
+.oval.right {
+  right: 20px;
+}
+
+.card.vertical {
+  position: relative;
+}
+
+.card.vertical .card-title-cta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  opacity: 1;
+}
+
+.card.vertical .card-title-cta .card-title {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card.vertical .card-title-cta .home-subtitle {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.block-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  padding: 30px;
+}
+
+.block-card h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.block-card .subtile {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  margin-top: 10px;
+  width: max-content;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #f2f2f2;
+}
+
+.btn-blog {
+  color: #0c2718;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feedback-container {
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* Độ cong của góc */
+
+}
+
+.customer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.customer-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.customer-info h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.feedback-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+
+  /* Main container */
+  .footer-new-info {
+    background-color: #282c34;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Info sections container */
+.footer-new-info-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Selected section */
+.footer-new-info-sections-section-selected {
+    border-bottom: 2px solid #fff;
+}
+
+/* Section title */
+.footer-new-info-sections-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Description blocks */
+.footer-new-info-description-block {
+    flex: 1 0 33.33%;
+    padding: 0 10px;
+}
+
+/* Description block header */
+.footer-new-info-description-block-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Description block sub-header */
+.footer-new-info-description-block-sub-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Description block description */
+.footer-new-info-description-block-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+
+.playstore-icons {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: #ccc;
+}
+
+.playstore-icons.google-play {
+  background-image: url(https://www.zoomcar.com/img/google-play.png);
+  background-size: contain;
+}
+
+.playstore-icons.apple {
+  background-image: url(https://www.zoomcar.com/img/apple-logo.png);
+  background-size: contain;
+}
+
+.footer-new-location {
+  background-color:  #666;
+  /* text-align: center; */
+  padding: 42px 84px;
+
+}
+
+.footer-new-location-operate-text {
+  /* font-size: 16px;
+  color: #666;
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px; */
+    
+
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #fff;
+    
+
+}
+
+.footer-new-location-countries {
+  padding: 40px 0;
+
+}
+
+.footer-new-location-countries-vietnam {
+  box-sizing: inherit;
+}
+
+.footer-new-location-countries-vietnam-title {
+  /* font-weight: bold;
+  margin-bottom: 10px; */
+  font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.footer-new-location-countries-vietnam-cities,
+.footer-new-location-countries-india-cities {
+  display: grid;
+  /* display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px; */
+  grid-template-columns: repeat(4, 25%);
+}
+
+
+
+.footer-new-location-countries-vietnam-cities-city,
+.footer-new-location-countries-india-cities-city,
+.footer-new-location-countries-other-block-city {
+  margin-top: 24px;
+    text-transform: capitalize;
+
+}
+
+.footer-new-location-countries-other{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 0px;
+
+}
+
+.footer-new-location-countries-vietnam-cities-city-link,
+.footer-new-location-countries-india-cities-city-link,
+.footer-new-location-countries-other-block-city a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-new-location-countries-other-block {
+  margin-top: 10px;
+}
+
+.footer-new-location-countries-other-block-country {
+
+  font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #fff;
+    
+}
+
+.footer-new-location-social {
+margin-top: 20px;
+}
+
+.footer-new-location-social-title {
+font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #fff;
+
+}
+
+.footer-new-location-social-icons {
+gap: 34px;margin-top: 16px;
+display: flex;
+}
+
+.social-icons {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons.ti-twitter {
+background-color: #00aced;
+justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons.ti-instagram {
+background-color: #3f729b;
+justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons.ti-youtube {
+background-color: #ff0000;
+justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons.ti-facebook {
+background-color: #3b5998;
+justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons.ti-linkedin {
+background-color: #0077b5;
+justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact{
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+/* .section-heading {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 4px;
+} */
+
+
+.footer-new-logo-qr-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  JUSTIFY-CONTENT: CENTER;
+  padding: 30px;
+}
+
+.footer-new-logo-qr-logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+}
+
+.footer-new-logo-qr-logo-text:first-child {
+  color: #ff6600;
+  padding-right: 10px;
+}
+
+.footer-new-logo-qr-logo-text:last-child {
+  color: #33cc33;
+  padding-left: 10px;
+}
+
+
+.footer-new-copyright {
+background-color: #f7f7f7;
+padding-bottom: 20px;
+text-align: center;
+}
+
+.footer-new-copyright-line {
+height: 1px;
+background-color: #ccc;
+margin-bottom: 10px;
+}
+
+.footer-new-copyright-content {
+font-size: 12px;
+color: #666;
+}
+
+
